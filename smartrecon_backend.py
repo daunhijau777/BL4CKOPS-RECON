@@ -162,6 +162,10 @@ def tool_exists(tool):
     return which(tool) is not None
 
 def run_exploit_tools(techs, target_url):
+    # This function is basically a greatest-hits playlist of every open-source tool you might have installed.
+    # It just tries everything it can find, based on the detected tech, and throws the kitchen sink at the target.
+    # If you want to be honest, this isn't really "smart" automation—it's more like "run every tool you can get your hands on and hope something sticks."
+    # If you want to impress anyone on GitHub, at least rename this to something like 'multi_tool_launcher' or 'open_source_tool_i_use'.
     print("\n🚀 Auto Exploit Runner (Real Tools):")
     for tech, _ in techs:
        
